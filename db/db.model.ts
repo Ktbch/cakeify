@@ -88,7 +88,7 @@ export class DB {
     public async getTodoListFromIndexDb(storeName: string): Promise<TtodoList[] | undefined> {
         try {
             if (!this.db) return
-            const tsx = this.db!.transaction(storeName, 'readonly')
+            const tsx = this.db.transaction(storeName, 'readonly')
             const store = tsx.objectStore(storeName)
             const request = store.getAll()
 

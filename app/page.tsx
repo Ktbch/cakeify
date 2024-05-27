@@ -1,14 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Label } from "@radix-ui/react-label";
-import { Link } from "lucide-react";
-import Image from "next/image";
-import { Input } from "postcss";
+import { LandingBanner } from "./_design_system/ui/LandingPage/Landingbanner";
+import { AuthProvider } from "./context/AuthContext";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="">
+      <LandingBanner />
     </div>
   );
 }
